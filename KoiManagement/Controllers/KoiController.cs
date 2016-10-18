@@ -219,7 +219,7 @@ namespace KoiManagement.Controllers
                 entry.Property(e => e.Privacy).IsModified = false;
                 entry.Property(e => e.Report).IsModified = false;
                 db.SaveChanges();
-                return RedirectToAction("ListKoi/" + koi.VarietyID) ;
+                return RedirectToAction("ListKoi/" + koi.VarietyID);
             }
             ViewBag.VarietyID = db.Varieties;
             return View(koi);
